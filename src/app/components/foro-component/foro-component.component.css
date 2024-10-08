@@ -1,0 +1,13 @@
+/* Asegúrate de que el contenedor del modal tenga un margen auto */
+.container {
+    margin: auto;
+    /* Esto hará que el modal esté centrado */
+  }
+  
+  /* Añadir un poco de sombra y bordes */
+  .modal-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  

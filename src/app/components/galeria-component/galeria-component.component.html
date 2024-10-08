@@ -1,0 +1,20 @@
+<!-- Título llamativo para la Galería -->
+<div class="mt-20 text-center">
+    <h1 class="text-4xl font-bold text-yellow-600 my-8 uppercase">
+      Galería Aleatoria de Razas Caninas
+    </h1>
+  </div>
+  
+  <!-- Galería de Imágenes -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    @for (chunk of chunkedImages; track chunk) {
+      <div class="grid gap-4">
+        @for (image of chunk; track image) {
+          <img class="h-auto max-w-full rounded-lg" [src]="image" alt="Dog image">
+        }
+      </div>
+    } @empty {
+      <p>No hay imágenes para mostrar</p>
+    }
+  </div>
+  
